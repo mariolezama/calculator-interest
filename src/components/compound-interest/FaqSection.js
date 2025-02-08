@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -14,12 +13,6 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
 const FaqSection = () => {
-  const [activeIndex, setActiveIndex] = useState(1);
-
-  const toggleAccordion = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
-
   const createData = (type, description, times) => ({
     type,
     description,
@@ -34,11 +27,31 @@ const FaqSection = () => {
     createData("Diario", "Genera interés cada día.", 365),
   ];
   const rows2 = [
-    createData("Anual", "Genera interés una vez al año.", "1 x 100 = $100 anuales"),
-    createData("Mensual", "Genera interés cada mes.", "12 x 100 = $1,200 anuales"),
-    createData("Quincenal", "Genera interés cada quince días.", "24 x 100 = $2,400 anuales"),
-    createData("Semanal", "Genera interés cada 7 días.", "52 x 100 = $5,200 anuales"),
-    createData("Diario", "Genera interés cada día.", "365 x 100 = $36,500 anuales"),
+    createData(
+      "Anual",
+      "Genera interés una vez al año.",
+      "1 x 100 = $100 anuales"
+    ),
+    createData(
+      "Mensual",
+      "Genera interés cada mes.",
+      "12 x 100 = $1,200 anuales"
+    ),
+    createData(
+      "Quincenal",
+      "Genera interés cada quince días.",
+      "24 x 100 = $2,400 anuales"
+    ),
+    createData(
+      "Semanal",
+      "Genera interés cada 7 días.",
+      "52 x 100 = $5,200 anuales"
+    ),
+    createData(
+      "Diario",
+      "Genera interés cada día.",
+      "365 x 100 = $36,500 anuales"
+    ),
   ];
 
   return (
@@ -57,7 +70,7 @@ const FaqSection = () => {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-        <TableContainer component={Paper}>
+          <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
               <TableHead>
                 <TableRow>
@@ -72,7 +85,7 @@ const FaqSection = () => {
                     key={row.type}
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >
-                  <TableCell align="center">{row.type}</TableCell>
+                    <TableCell align="center">{row.type}</TableCell>
                     <TableCell align="center">{row.description}</TableCell>
                     <TableCell align="center">{row.times}</TableCell>
                   </TableRow>
@@ -93,7 +106,7 @@ const FaqSection = () => {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-        <TableContainer component={Paper}>
+          <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
               <TableHead>
                 <TableRow>
@@ -108,7 +121,7 @@ const FaqSection = () => {
                     key={row.type}
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >
-                  <TableCell align="center">{row.type}</TableCell>
+                    <TableCell align="center">{row.type}</TableCell>
                     <TableCell align="center">{row.description}</TableCell>
                     <TableCell align="center">{row.times}</TableCell>
                   </TableRow>

@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+.subtitle-style {
+  padding-bottom: 5px;
+  color: gray;
+}
+
+.el-icon-info {
+  font-size: x-small;
+}
+
+#input-container {
+  padding: 15px;
+}
+
+.el-col {
+  margin-top: 15px;
+}
+
+.homepage-background {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+#custom-calculator div {
+  padding: 80px 0;
+  color: #777;
+  text-align: center;
+}
+
+#custom-calculator-child div {
+  all: unset;
+  color: #777;
+}
+
+
+#custom-html-j p {
+  color: #777;
+}

@@ -1,5 +1,5 @@
 import Home from './components/Home'
-import './css/main.css';
+import './css/main_calculadora.css';
 
 const App = () => {
   return (

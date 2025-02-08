@@ -42,7 +42,7 @@ const CompoundInterestChart = ({ inputs }) => {
       currency: "USD",
     }).format(value);
 
-  const calculateData = () => {
+  useEffect(() => {
     setLoading(true);
     let categories = [];
     let metrics = { principal: [], deposits: [], interests: [], total: [] };
@@ -109,10 +109,6 @@ const CompoundInterestChart = ({ inputs }) => {
       }
     );
     setLoading(false);
-  };
-
-  useEffect(() => {
-    calculateData();
   }, [inputs]);
 
   const options = {
@@ -140,7 +136,7 @@ const CompoundInterestChart = ({ inputs }) => {
       </MuiTooltip>
       <Bar data={chartData} options={options} />
       <Divider style={{ margin: "20px 0" }} />
-      <ResultCard currentStrategy={currentStrategy}/>
+      <ResultCard currentStrategy={currentStrategy} />
       <Divider style={{ margin: "20px 0" }} />
 
       <Typography variant="h6">Resultados</Typography>
