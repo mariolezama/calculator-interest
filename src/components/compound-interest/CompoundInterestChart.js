@@ -80,16 +80,17 @@ const CompoundInterestChart = ({ inputs }) => {
         },
         {
           label: "Depósitos adicionales acumulados",
-          backgroundColor: "#003366", // Deep Navy Blue
+          backgroundColor: "#00509E", // Royal Blue
           data: metrics.deposits,
         },
         {
           label: "Interés acumulado",
-          backgroundColor: "#004080", // Medium Navy Blue
+          backgroundColor: "#00A1E4", // Bright Sky Blue
           data: metrics.interests,
         },
       ],
     });
+      
 
     let tableData = categories.map((_, index) => ({
       years: index + 1,

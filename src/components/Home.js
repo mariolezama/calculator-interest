@@ -55,7 +55,7 @@ const CompoundInterestView = () => {
         </Box>
         <Paper elevation={2}>
           <Grid container>
-            <Grid size={4}>
+            <Grid size={{xs: 12, lg: 4 }}>
               <Box sx={{ p: 2 }}>
                 {/* Reusable Tooltip Component */}
                 {({ title, content }) => (
@@ -189,7 +189,7 @@ const CompoundInterestView = () => {
               </Box>
             </Grid>
 
-            <Grid size={8}>
+            <Grid size={{ xs: 12, lg: 8 }}>
               <Box sx={{ p: 2 }}>
                 <CompoundInterest inputs={inputs} />
               </Box>

@@ -13,7 +13,7 @@ export default function ResultCard({ currentStrategy }) {
   return (
     <Box sx={{ minWidth: 275 }}>
       <Grid2 container spacing={2}>
-        <Grid2 size={3} item>
+        <Grid2  size={{ xs:12, md: 6, lg: 3}} item>
         <Card sx={{ height: 140 }} variant="outlined">
             <CardContent>
               <WalletIcon />
@@ -30,7 +30,7 @@ export default function ResultCard({ currentStrategy }) {
             </CardContent>
           </Card>
         </Grid2>
-        <Grid2 size={3} item>
+        <Grid2  size={{ xs:12, md: 6, lg: 3}} item>
         <Card sx={{ height: 140 }} variant="outlined">            <CardContent>
               <MoneyIcon />
               <Typography
@@ -45,7 +45,7 @@ export default function ResultCard({ currentStrategy }) {
             </CardContent>
           </Card>
         </Grid2>
-        <Grid2 size={3} item>
+        <Grid2  size={{ xs:12, md: 6, lg: 3}} item>
           <Card sx={{ height: 140 }} variant="outlined">
             <CardContent>
               <ShowChartIcon/>
@@ -61,7 +61,7 @@ export default function ResultCard({ currentStrategy }) {
             </CardContent>
           </Card>
         </Grid2>
-        <Grid2 size={3} item>
+        <Grid2 size={{ xs:12, md: 6, lg: 3}} item>
         <Card sx={{ height: 140 }} variant="outlined">
             <CardContent>
               <AttachMoneyIcon/>

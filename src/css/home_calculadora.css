@@ -21,19 +21,3 @@
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
-
-#custom-calculator div {
-  padding: 80px 0;
-  color: #777;
-  text-align: center;
-}
-
-#custom-calculator-child div {
-  all: unset;
-  color: #777;
-}
-
-
-#custom-html-j p {
-  color: #777;
-}
